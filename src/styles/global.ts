@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
 
 body{
     
-    background-color: #282c34;
+    background-color: #333;
     color: #999999;
     -webkit-font-smoothing: antialiased;
 }
