@@ -61,6 +61,10 @@ export const Footer: React.FC = styled.div`
 export const IconsContainer: React.FC = styled.div`
   padding: 20px;
   display: flex;
+`;
+
+export const IconContainer: React.FC = styled.div`
+  margin: 0 8px;
 
   a {
     text-decoration: none;
@@ -69,7 +73,13 @@ export const IconsContainer: React.FC = styled.div`
 
   svg {
     background: none;
-    margin: 0 10px;
     color: #777;
+    transition: all 0.1s;
+  }
+
+  svg:hover {
+    background: none;
+    color: #4e89ae;
+    transform: scale(1.1);
   }
 `;

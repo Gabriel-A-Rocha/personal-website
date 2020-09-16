@@ -4,8 +4,16 @@ import {
   FaLinkedin,
   FaFacebookSquare,
   FaWhatsapp,
+  FaGithub,
 } from "react-icons/fa";
-import { Container, Header, Card, Footer, IconsContainer } from "./styles";
+import {
+  Container,
+  Header,
+  Card,
+  Footer,
+  IconsContainer,
+  IconContainer,
+} from "./styles";
 
 import avatar from "../../assets/avatar.jpg";
 
@@ -37,21 +45,36 @@ const Main: React.FC = () => {
       </Card>
 
       <Footer>
-        <h3>Contato</h3>
-
         <IconsContainer>
-          <a href="www.google.com">
-            <FaEnvelopeSquare size="48" />
-          </a>
-          <a href="www.google.com">
-            <FaLinkedin size="48" />
-          </a>
-          <a href="www.google.com">
-            <FaFacebookSquare size="48" />
-          </a>
-          <a href="www.google.com">
-            <FaWhatsapp size="48" />
-          </a>
+          <IconContainer>
+            <a href="www.google.com">
+              <FaEnvelopeSquare size="48" />
+            </a>
+          </IconContainer>
+
+          <IconContainer>
+            <a href="www.google.com">
+              <FaLinkedin size="48" />
+            </a>
+          </IconContainer>
+
+          <IconContainer>
+            <a href="www.google.com">
+              <FaFacebookSquare size="48" />
+            </a>
+          </IconContainer>
+
+          <IconContainer>
+            <a href="www.google.com">
+              <FaWhatsapp size="48" />
+            </a>
+          </IconContainer>
+
+          <IconContainer>
+            <a href="www.google.com">
+              <FaGithub size="48" />
+            </a>
+          </IconContainer>
         </IconsContainer>
       </Footer>
     </Container>
